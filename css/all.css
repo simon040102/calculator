@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/css?family=Baloo+Tamma+2:600,700);
+CSSResult Skip Results Iframe
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.warp {
+  /* Layout Properties */
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 800px;
+  margin: 0 auto;
+  padding-top: 100px;
+  /* UI Properties */
+  background: #293B29 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
+}
+
+.calculator {
+  margin: 0 auto;
+  width: 350px;
+  height: 525px;
+  background: #062145 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 20px 40px #00000066;
+          box-shadow: 0px 20px 40px #00000066;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.calculator .top {
+  height: 109px;
+  background-color: #041936;
+  border-radius: 20px 20px 0px 0px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.calculator .top #formula {
+  text-align: end;
+  margin-right: 20px;
+  margin-left: 20px;
+  font: normal normal normal 16px/16px Roboto;
+  color: #00C4FF;
+  opacity: 1;
+}
+
+.calculator .top #result {
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 66px;
+  text-align: right;
+  font: normal normal normal 56px/56px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.calculator .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calculator .middle .input {
+  width: 270px;
+}
+
+.calculator .middle .input .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 16px;
+}
+
+.calculator .middle .input .number a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  width: 64px;
+  height: 64px;
+}
+
+.calculator .middle .function a {
+  width: 80px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+.calculator .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.calculator .bottom .B {
+  text-decoration: none;
+  width: 64px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  letter-spacing: 0px;
+  color: #00C4FF;
+  opacity: 1;
+}
+
+.calculator .bottom .R {
+  text-decoration: none;
+  width: 155px;
+  height: 64px;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#00C4FF), to(#6C00FF)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #00C4FF 0%, #6C00FF 100%) 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  color: #FFFFFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-right: 30px;
+}
+/*# sourceMappingURL=all.css.map */
